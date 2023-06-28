@@ -1,0 +1,88 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.btn {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  background-color: $bg-complete;
+  color: $white;
+  width: 175px;
+  height: 48px;
+  border: 1px solid $white;
+  border-radius: 25px;
+  font-size: 1.125rem;
+  z-index: 1;
+  &:hover {
+    background-color: $brand-color;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  width: 90%;
+  margin: 20px 5%;
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &__item {
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+    &:hover .item__img {
+      opacity: 0.6;
+    }
+    &:hover .btn {
+      display: block;
+    }
+  }
+}
+
+.confirmation {
+  position: fixed;
+  z-index: 100;
+  background-color: $bg-confirm;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  color: $white;
+  &__wrapper {
+    position: relative;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    padding: 5%;
+    text-align: center;
+    background-color: $bg-complete;
+    border: 1px solid $white;
+    border-radius: 10px;
+    @include tablet {
+      top: 350px;
+      max-width: 450px;
+    }
+  }
+  &__btn {
+    margin: 20px 5% 0 5%;
+    border: 1px solid $white;
+    background-color: $bg-complete;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
+}
+.hidden {
+  display: none;
+}

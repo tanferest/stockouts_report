@@ -1,0 +1,62 @@
+[
+  {
+    "code": 3019,
+    "name": "SMPL PRODUCT 3019",
+    "price": 35.99,
+    "sales_ranking": 2,    
+    "stockout_rate": 0.4632,
+    "wh_coverage": 0.25,
+    "size_stock": {
+      "S": 1,
+      "M": 2,
+      "L": 0,
+      "XL": 4,
+      "XXL": 0
+    }
+  },
+  {
+    "code": 3032,
+    "name": "SMPL PRODUCT 3032",
+    "price": 19.99,
+    "sales_ranking": 1,    
+    "stockout_rate": 0.3185,
+    "wh_coverage": 0.18,
+    "size_stock": {
+      "S": 3,
+      "M": 2,
+      "L": 2,
+      "XL": 0,
+      "XXL": 2
+    }
+  },
+  {
+    "code": 3158,
+    "name": "SMPL PRODUCT 3158",
+    "price": 79.90,
+    "sales_ranking": 4,    
+    "stockout_rate": 0.1865,
+    "wh_coverage": 0.41,
+    "size_stock": {
+      "XS": 0,
+      "S": 2,
+      "M": 2,
+      "L": 3,
+      "XL": 2
+    }
+  },
+  {
+    "code": 2390,
+    "name": "SMPL PRODUCT 2390",
+    "price": 85.95,
+    "sales_ranking": 3,        
+    "stockout_rate": 0.6706,
+    "wh_coverage": 0.75,
+    "size_stock": {
+      "S": 3,
+      "M": 3,
+      "L": 2,
+      "XL": 1,
+      "XXL": 0
+    }
+  }      
+]

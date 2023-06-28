@@ -1,0 +1,84 @@
+@import './Variables.scss';
+
+.item {
+  &__img {
+    width: 100%;
+  }
+  &__index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    font-size: 0.75rem;
+    background-color: $brand-color;
+    color: $white;
+  }
+  &__data {
+    padding: 5%;
+  }
+  &__code {
+    color: $grey-text;
+  }
+  &__name {
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  &__price {
+    color: $grey-text;
+    margin-bottom: 30px;
+  }
+  &__percnt {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $light-text;
+    &--num {
+      font-size: 1.75rem;
+      color: $grey-text;
+    }
+    &--sign {
+      color: $grey-text;
+      vertical-align: 30%;
+      margin-right: 8px;
+    }
+    color: $light-text;
+    text-transform: uppercase;
+  }
+  &__bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: $light-text;
+    margin-bottom: 20px;
+    &--progress {
+      height: 10px;
+      background-color: $good-cov;
+      border-radius: 20px;
+    }
+  }
+  &__coverage {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid $light-text;
+    text-align: end;
+    text-transform: uppercase;
+    color: $light-text;
+    &--span {
+      display: block;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.is-low-coverage {
+  color: $low-cov;
+}
+
+.is-good-coverage {
+  color: $good-cov;
+}

@@ -1,0 +1,22 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.header {
+    height: 60px;
+    background-color: $brand-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 3px rgba(206, 206, 206, 0.7);
+    @include tablet {
+        justify-content: flex-start;
+    }
+    &__title {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $white;
+        @include tablet {
+            margin-left: 5%;
+        }
+    }
+}
